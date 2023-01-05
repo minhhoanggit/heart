@@ -108,9 +108,14 @@ canvas {
 .title{
     color: #fff;
     font-size: 28px;
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    -webkit-text-stroke: 0.05vw #FF5CA4;
 }
+
 
 /* .ovp-test{
     display: none;
@@ -170,6 +175,51 @@ canvas {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+.text{
+  background-color:rgb(0, 0, 0);
+  width: 100%;
+  color: #FF5CA4;
+  height:100%;
+  font-size: 32px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  padding:20px;
+}
+
+
+.center_text{
+  padding: 40px;
+  animation: animate 1.5s linear infinite;
+  /* width:10px */
+}
+
+
+
+
+.top_text {
+  padding: 40px;
+  animation: shake 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  /* 10% { transform: translate(-1px, -2px) rotate(-1deg); } */
+  /* 20% { transform: translate(-3px, 0px) rotate(1deg); } */
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  /* 40% { transform: translate(1px, -1px) rotate(1deg); } */
+  /* 50% { transform: translate(-1px, 2px) rotate(-1deg); } */
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  /* 70% { transform: translate(3px, 1px) rotate(-1deg); } */
+  /* 80% { transform: translate(-1px, -1px) rotate(1deg); } */
+  /* 90% { transform: translate(1px, 2px) rotate(0deg); } */
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
   </style>
  </HEAD>
  
@@ -178,12 +228,22 @@ canvas {
       <canvas id="pinkboard"></canvas>
    </div>
    <div class="ovp-test overlay jus_center">
-    <h1 class="title">Có yêu tui ko</h1>
+    <h1 class="title">Have a nice day!!!<br>
+      <br>Will you marry me???
+    </h1>
     <div class="overlay-section">
         <div class="yes btn">Có</div>
         <div class="no btn">Không</div>
     </div>
    </div>
+   <div class="text">
+    <div class="top_text">Chúc ngnwaii may mắn!!</div>
+    <div class="center_text">My Princess :3 </div>
+    <div class="top_text">Thi tốt nè!!</div>
+   </div>
+   <!-- <div class="left_text">
+    left
+   </div> -->
   <script>
   /*
 
@@ -433,18 +493,23 @@ var ParticlePool = (function() {
     render();
   }, 10);
 })(document.getElementById('pinkboard'));
+
   </script>
-  <div class="center-text",
+  <!-- <div class="center_text",
   style="background-color:rgb(0, 0, 0);
-        width: 100%;
+        width: 1000%;
         color: #FF5CA4;
         height:100%;
-        font-size: 40px;
+        font-size: 32px;
         font-style: italic;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 5px;
-        text-align: center;">Xin Chào</div>
+        text-align: center;
+        margin-bottom: 5px;"
+        >
+  </div> -->
+  
+  </div>
  </BODY>
 </HTML>
